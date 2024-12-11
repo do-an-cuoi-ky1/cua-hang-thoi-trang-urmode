@@ -10,9 +10,9 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: center; /* Căn giữa logo và tên cửa hàng */
     padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
+    background-color: #000; /* Nền header màu đen */
 }
 
 .logo {
@@ -22,16 +22,17 @@ header {
 }
 
 .logo-img {
-    width: 60px; /* Adjust logo size */
+    width: 60px;
     height: auto;
-    border-radius: 10px; /* Rounded corners for logo */
+    border-radius: 10px;
     object-fit: contain;
 }
 
 h1 {
     font-size: 24px;
     margin: 0;
-    color: #333;
+    color: #fff; /* Màu chữ trắng */
+    text-transform: uppercase; /* Chữ in hoa */
 }
 
 /* Main container styling */
@@ -54,7 +55,7 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #007BFF;
+    color: #000; /* Đổi tiêu đề bảng size thành màu đen */
 }
 
 label {
@@ -84,6 +85,20 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Styling for the result box */
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #000; /* Kẻ viền đen quanh kết quả */
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#result p {
+    margin: 0;
+    font-weight: bold;
 }
 
 /* Table styles */
